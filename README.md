@@ -1,5 +1,7 @@
 # JavaScript Variable Name Validator
 
+[![Version](https://img.shields.io/npm/v/validate-variable)](https://www.npmjs.com/package/validate-variable) [![Total Downloads](https://img.shields.io/npm/dt/validate-variable)](https://www.npmjs.com/package/validate-variable) [![License](https://img.shields.io/npm/l/validate-variable)](https://www.npmjs.com/package/validate-variable)
+
 Validate any string as a JavaScript variable name, taking into consideration both the ECMAScript 6 specification and Unicode 8.0.0, as well as reserved words and invalid escape sequences in older engines.
 
 Adapted from [JavaScript identifier validator](https://github.com/mathiasbynens/mothereff.in/tree/master/js-variables) by [Mathias Bynens](https://mathiasbynens.be/) and repackaged as an npm module.
