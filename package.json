@@ -1,0 +1,68 @@
+{
+	"name": "validate-variable",
+	"version": "1.0.0",
+	"description": "Validate any string as a JavaScript variable name, taking into consideration both the ECMAScript 6 specification and Unicode 8.0.0, as well as reserved words and invalid escape sequences in older engines.",
+	"module": "./lib",
+	"main": "./lib",
+	"scripts": {
+		"clean": "rimraf lib",
+		"lint": "eslint index.js",
+		"build": "webpack --mode=production --no-progress --hide-modules --config=webpack.config.js",
+		"prepublish": "npm run clean && npm run lint && npm run build"
+	},
+	"files": [
+		"lib",
+		"src"
+	],
+	"keywords": [
+		"valid",
+		"validate",
+		"variable",
+		"identifier",
+		"es3",
+		"es5",
+		"es2015",
+		"unicode",
+		"immutable",
+		"zero width",
+		"reserved",
+		"keyword"
+	],
+	"author": "André Ekeberg <hello@andreekeberg.se> (https://andreekeberg.se/en/)",
+	"bugs": {
+		"url": "https://github.com/andreekeberg/validate-variable/issues"
+	},
+	"homepage": "https://github.com/andreekeberg/validate-variable",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/andreekeberg/validate-variable.git"
+	},
+	"license": "GPL-2.0-or-later",
+	"devDependencies": {
+		"@babel/core": "^7.10.4",
+		"@babel/plugin-transform-modules-amd": "^7.10.5",
+		"@babel/plugin-transform-modules-commonjs": "^7.6.0",
+		"@babel/plugin-transform-runtime": "^7.6.2",
+		"@babel/polyfill": "^7.10.4",
+		"@babel/preset-env": "^7.8.3",
+		"@babel/register": "^7.10.4",
+		"@babel/runtime": "^7.6.2",
+		"@babel/runtime-corejs3": "^7.6.2",
+		"babel-cli": "^6.26.0",
+		"babel-eslint": "^10.0.1",
+		"babel-loader": "^8.0.6",
+		"babel-plugin-add-module-exports": "^1.0.2",
+		"babel-polyfill": "^6.26.0",
+		"babel-preset-env": "^1.6.1",
+		"babel-preset-minify": "^0.5.0",
+		"babel-runtime": "^6.26.0",
+		"core-js": "^3.2.1",
+		"cross-env": "^5.2.1",
+		"eslint": "^7.32.0",
+		"eslint-config-standard": "^16.0.3",
+		"eslint-plugin-node": "^11.1.0",
+		"rimraf": "^2.6.2",
+		"webpack": "^4.40.2",
+		"webpack-cli": "^3.3.9"
+	}
+}
